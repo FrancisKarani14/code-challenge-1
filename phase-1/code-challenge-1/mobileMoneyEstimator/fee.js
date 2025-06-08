@@ -18,23 +18,27 @@ function estimateTransactionFee() {
 
     if (basicTransactionFee < minimumFee) {
         // charge ksh10 if the transaction fee is less than 10
-        let finalFee = minimumFee;
+         finalFee = minimumFee;
+        // return;
         
     } else if (basicTransactionFee>maximumFee) {
-        let finalFee = maximumFee;
+         finalFee = maximumFee;
+        // return;
         // charge ksh70 if the transaction fee is more than 70        
     } else{
     // otherwise charge the transaction fee.
-    let finalFee =basicTransactionFee;}
+     finalFee =basicTransactionFee;}
 
 
 // variable fo the amount of money to be debited
-const amountToBeDebited = amountToSend + basicTransactionFee;
+const amountToBeDebited = amountToSend + finalFee;
 // console output to the user
-console.log(`calculated transaction fee Ksh${basicTransactionFee}`);
+console.log(`calculated transaction fee Ksh${finalFee}`);
+
 
 console.log(`total amount to be debited Ksh${amountToBeDebited}`);
-console.log();
+
+
 console.log("Send Money Securely!");
 
 
