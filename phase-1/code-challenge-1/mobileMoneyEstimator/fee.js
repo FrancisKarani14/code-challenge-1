@@ -31,6 +31,14 @@ function estimateTransactionFee() {
 // variable fo the amount of money to be debited
 const amountToBeDebited = amountToSend + basicTransactionFee;
 // console output to the user
+console.log(`calculated transaction fee Ksh${basicTransactionFee}`);
+
+console.log(`total amount to be debited Ksh${amountToBeDebited}`);
+console.log();
+console.log("Send Money Securely!");
+
+
+
     
 }
 estimateTransactionFee()
