@@ -26,5 +26,7 @@ function calculateChaiIngredients() {
      console.log(`milk ${totalMilkInMl}ml`); 
      console.log(`tea Leaves ${totalMajaniInTbsp} tablespoons`);
       console.log(`sugar ${totalSugarInTeaSpoon} teaspoon(s)`);
+      console.log("enjoy your Chai Bora! ");
+      
     }
     calculateChaiIngredients()
