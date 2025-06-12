@@ -1,6 +1,6 @@
 function calculateChaiIngredients() {
-    const welcomeMessage = prompt("Karibu! How many cups of Chai Bora would you like to make?");
-    const numberOfcups = Number(welcomeMessage);
+    let numberOfcups = document.getElementById("amount").value; 
+     numberOfcups = Number(numberOfcups);
 
     // standard recipe for one cup of Chai
     const standardWaterInMl = 200;
@@ -16,17 +16,21 @@ function calculateChaiIngredients() {
       // condition that makes sure the numbere of cups are valid
 
     if (isNaN(numberOfcups) || numberOfcups <= 0) {
-        console.log("please enter a valid input for the number of cups.");
+        "please enter a valid input for the number of cups.";
         return;
         
     }
     // results printoutyed according to the number of cups keyed by the client. uses backticks to interpolate strings.
-    console.log(`To make ${numberOfcups} cups of Chai bora you need:`);
-    console.log(`water ${totalWaterInMl}ml`);
-     console.log(`milk ${totalMilkInMl}ml`); 
-     console.log(`tea Leaves ${totalMajaniInTbsp} tablespoons`);
-      console.log(`sugar ${totalSugarInTeaSpoon} teaspoon(s)`);
-      console.log("enjoy your Chai Bora! ");
-      
+
+document.getElementById("output").innerHTML=`
+<ul>
+   <li> To make ${numberOfcups} cups of Chai bora you need:</li>
+   <li> water ${totalWaterInMl}ml</li>
+    <li> milk ${totalMilkInMl}ml </li> 
+    <li> tea Leaves ${totalMajaniInTbsp} tablespoons</li>
+     <li> sugar ${totalSugarInTeaSpoon} teaspoon(s) </li>
+</ul>
+      <p>enjoy your Chai Bora! </p>
+      `
     }
-    calculateChaiIngredients()
+    // calculateChaiIngredients()
