@@ -16,7 +16,7 @@ These tools showcase basic front-end development, where JavaScript interacts dir
    chai.html: The user interface.
   chai.js: Contains the JavaScript logic for calculations and DOM manipulation.
 
-**2. 💸 Mobile Money Transaction Fee Estimator**
+**2. Mobile Money Transaction Fee Estimator**
 
 * **Description:** This is a tool that estimates the transaction fee for sending money via a mobile money service. It incorporates a realistic fee structure with a minimum fee (Ksh 10) and a maximum fee (Ksh 70), ensuring the final charge is always within these bounds.
 * **Key Functionality:** Handles numerical input, implements conditional logic (`if-else if-else`) for fee tiers, and updates the webpage with the calculated fee and total amount.
@@ -24,7 +24,7 @@ These tools showcase basic front-end development, where JavaScript interacts dir
   fee.html: The user interface.
   fee.js: Contains the JavaScript logic for fee calculation and DOM manipulation.
 
-### 3. 🏍️ Boda Fare Estimator
+### 3.  Boda Fare Estimator
 
 * **Description:** A simple tool to estimate the fare for a boda-boda ride based on the distance in kilometers. It demonstrates how to capture user input and display calculated results on a web page.
 * **Key Functionality:** Takes numerical input for distance, applies a simple fare calculation, and presents the estimated cost to the user on the webpage.
@@ -34,7 +34,7 @@ These tools showcase basic front-end development, where JavaScript interacts dir
 
 ---
 
-## 💻 Technologies Used
+## Technologies Used
 
 * **HTML:** For structuring the web pages and creating input forms and display areas.
 * **JavaScript ** For all the dynamic behavior, calculations, and interaction with the DOM (Document Object Model) to update webpage content.
