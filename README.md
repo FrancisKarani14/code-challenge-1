@@ -1,65 +1,74 @@
-**Phase 1: JavaScript Code Challenges**
+** Phase 1: JavaScript Web Tools & Calculators**
 
+This repository contains a collection of simple, interactive web-based tools developed as part of my "Phase 1" JavaScript learning journey. Each project focuses on fundamental JavaScript concepts, user interaction via the DOM (Document Object Model), and practical problem-solving.
 
+---
 
-This Repository has a collection of basic Javascript coding challenges that are part of phase 1 part of my learning journey
-it focuses on the basics of Javascript concepts like variables, data types, operators, conditional statements and the use of prompt() and console.log()
+**Project Overview**
 
-**The challenges Included.**
+These tools showcase basic front-end development, where JavaScript interacts directly with HTML to take user input and display dynamic results on the webpage.
 
-**1.Chai Ingredients Calculator:**
-**Description**: This is a simple calculator that determines the required amounts on water, milk, tea leaves and sugar according to the number of cups the user keys in based on the standard recipe.
-**Key Concepts** User input (prompt()), number conversion (Number()), basic arithmetic operations, console.log() for output, input validation (isNaN()).
+### 1. ☕ Chai Ingredients Calculator
 
-**2. Boda Fare Estimator:**
-****Description:** This is  a system that estimates the amount of money that a customer will pay to travel by a motorbike. The fare accumulates according to the number of kilometers traveled and the base fare.  
-**Key Concepts:** User input (prompt()), number conversion (Number()), basic arithmetic operations, console.log() for output, input validation (isNaN()).
+* **Description:** A simple calculator that helps you prepare Kenyan chai! Enter the number of cups you want, and it will calculate the required amounts of water, milk, tea leaves, and sugar based on a standard recipe.
 
-**3. Mobile Money Transaction Fee Estimator**
-**Description:** This is a tool to estimate the transaction fee for sending money via a mobile money service. It, includes a minimum fee of KES 10 and a maximum fee of KES 70, ensuring the fee is always within these bounds.
-**Key Concepts:** User input (prompt()), number conversion, if-else if-else conditional statements for complex logic.
+* **Files:**
+   chai.html: The user interface.
+  chai.js: Contains the JavaScript logic for calculations and DOM manipulation.
 
-**Technologies Used**
-**JavaScript:** The core programming language for all challenge solutions.
-**Web Browser **(for prompt()/console.log()): Can be used to run and test scripts directly in the browser's developer console.
-**Setup**
+**2. 💸 Mobile Money Transaction Fee Estimator**
 
-To run these projects locally, follow these steps:
-Clone this repository:
+* **Description:** This is a tool that estimates the transaction fee for sending money via a mobile money service. It incorporates a realistic fee structure with a minimum fee (Ksh 10) and a maximum fee (Ksh 70), ensuring the final charge is always within these bounds.
+* **Key Functionality:** Handles numerical input, implements conditional logic (`if-else if-else`) for fee tiers, and updates the webpage with the calculated fee and total amount.
+* **Files:**
+  fee.html: The user interface.
+  fee.js: Contains the JavaScript logic for fee calculation and DOM manipulation.
 
-Bash
+### 3. 🏍️ Boda Fare Estimator
 
-git clone git@github.com:FrancisKarani14/code-challenge-1.git
-Then, navigate into the cloned directory:
+* **Description:** A simple tool to estimate the fare for a boda-boda ride based on the distance in kilometers. It demonstrates how to capture user input and display calculated results on a web page.
+* **Key Functionality:** Takes numerical input for distance, applies a simple fare calculation, and presents the estimated cost to the user on the webpage.
+* **Files:**
+  boda.html: The user interface.
+  boda.js: Contains the JavaScript logic for fare calculation and DOM manipulation.
 
-Bash
+---
 
-cd code-challenge-1
-Node.js (Optional, for terminal execution):
-If you plan to run the scripts directly in your terminal using Node.js (rather than the browser console), ensure Node.js is installed on your system. You can download it from nodejs.org.
+## 💻 Technologies Used
 
-Navigate into the respective challenge folder (e.g., cd chaiCalculator).
-Initialize a Node.js project (if not already done for that specific folder):
-Bash
+* **HTML:** For structuring the web pages and creating input forms and display areas.
+* **JavaScript ** For all the dynamic behavior, calculations, and interaction with the DOM (Document Object Model) to update webpage content.
+* **DOM Manipulation:** Key to all projects, ensuring that outputs are displayed directly on the webpage for an interactive user experience, rather than just in the browser console.
 
-You have two primary ways to run these JavaScript challenges:
-2. Using Node.js in Your Terminal (Requires Node.js installed)
-Open your terminal or command prompt.
-Navigate to the specific challenge folder you want to run (e.g., cd chaiCalculator).
-If you modified the script to use readline-sync for input, ensure you've installed it as described in the "Setup and Installation" section.
-Run the script using the node command:
-Bash
+---
 
-node chai.js
-# or
-node fare.js
-# or
-node fee.js
-The script will execute in your terminal, prompting for input and displaying output there.
+**setup**
 
+To run and interact with these projects locally:
 
-**Licence**
- MIT
-**Author**
-.Francis Karani
+1.  **Clone the Repository:**
+    Open your terminal or command prompt and run:
+    ```bash
+    git clone [https://github.com/FrancisKarani14/code-challenge-1.git](https://github.com/FrancisKarani14/code-challenge-1.git)
+    cd code-challenge-1
+    ```
+   
 
+2.  **Navigate to a Project Folder:**
+    Each project is in its own subfolder. For example:
+    * `cd chaiCalculator`
+    * `cd mobileMoneyEstimator`
+    * `cd bodaFareEstimator`
+
+3.  **Open the `index.html` file:**
+    Once inside a project folder, simply open the individual html file _(fee.html`/`boda.html`/`chai.html)_ in your preferred web browser. You can usually do this by double-clicking the file or by right-clicking and choosing "Open with Browser".
+
+4.  **Interact with the Tool:**
+    * Enter the requested information into the input fields.
+    * Click the "Calculate" or "Estimate" button.
+    * The results will appear directly on the webpage.
+
+---
+
+author: Francis Karani
+Licence: MIT Licence
