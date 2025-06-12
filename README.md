@@ -1,4 +1,7 @@
 **Phase 1: JavaScript Code Challenges**
+
+
+
 This Repository has a collection of basic Javascript coding challenges that are part of phase 1 part of my learning journey
 it focuses on the basics of Javascript concepts like variables, data types, operators, conditional statements and the use of prompt() and console.log()
 
