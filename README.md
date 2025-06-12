@@ -1,4 +1,4 @@
-** Phase 1: JavaScript Web Tools & Calculators**
+** Phase 1 Code Challenge: JavaScript Web Tools & Calculators**
 
 This repository contains a collection of simple, interactive web-based tools developed as part of my "Phase 1" JavaScript learning journey. Each project focuses on fundamental JavaScript concepts, user interaction via the DOM (Document Object Model), and practical problem-solving.
 
