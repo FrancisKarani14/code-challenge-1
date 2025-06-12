@@ -6,7 +6,14 @@
     <title>fee estimator</title>
 </head>
 <body>
-    <h1></h1>
-    
+    <h1>Simplied mobile transaction estimator</h1>
+    <label for="amountToSend">Karibu mkubwa, unatuma ngapi?</label>
+    <input type="number" id="amount">
+    <br>
+    <button onclick="estimateTransactionFee()">calculate the fee</button>
+    <div id="output">
+
+    </div>
+    <script src="./fee.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 function estimateTransactionFee() {
-    const welcomeMessage =prompt("Unatuma ngapi?(Enter amount in KSH)")
-    const amountToSend =Number(welcomeMessage);
+    let amountToSend = document.getElementById("amount").value;
+    amountToSend =Number(amountToSend);
     const minimumFee =10; 
     const maximumFee = 70; 
    
@@ -33,16 +33,17 @@ function estimateTransactionFee() {
 // variable fo the amount of money to be debited
 const amountToBeDebited = amountToSend + finalFee;
 // console output to the user
-console.log(`calculated transaction fee Ksh${finalFee}`);
+
+document.getElementById("output").innerHTML=`
+<ul>
+<li> calculated transaction fee Ksh${finalFee}</li>
 
 
-console.log(`total amount to be debited Ksh${amountToBeDebited}`);
-
-
-console.log("Send Money Securely!");
+<>total amount to be debited Ksh${amountToBeDebited}
+</ul>
+<p>Send Money Securely!<p>`
 
 
 
     
 }
-estimateTransactionFee()
